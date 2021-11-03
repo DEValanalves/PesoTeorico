@@ -1,0 +1,16 @@
+C:\dev\PesoTeorico\bin\Debug\net5.0\PesoTeorico.exe
+C:\dev\PesoTeorico\bin\Debug\net5.0\PesoTeorico.deps.json
+C:\dev\PesoTeorico\bin\Debug\net5.0\PesoTeorico.runtimeconfig.json
+C:\dev\PesoTeorico\bin\Debug\net5.0\PesoTeorico.runtimeconfig.dev.json
+C:\dev\PesoTeorico\bin\Debug\net5.0\PesoTeorico.dll
+C:\dev\PesoTeorico\bin\Debug\net5.0\ref\PesoTeorico.dll
+C:\dev\PesoTeorico\bin\Debug\net5.0\PesoTeorico.pdb
+C:\dev\PesoTeorico\obj\Debug\net5.0\PesoTeorico.csproj.AssemblyReference.cache
+C:\dev\PesoTeorico\obj\Debug\net5.0\PesoTeorico.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\PesoTeorico\obj\Debug\net5.0\PesoTeorico.AssemblyInfoInputs.cache
+C:\dev\PesoTeorico\obj\Debug\net5.0\PesoTeorico.AssemblyInfo.cs
+C:\dev\PesoTeorico\obj\Debug\net5.0\PesoTeorico.csproj.CoreCompileInputs.cache
+C:\dev\PesoTeorico\obj\Debug\net5.0\PesoTeorico.dll
+C:\dev\PesoTeorico\obj\Debug\net5.0\ref\PesoTeorico.dll
+C:\dev\PesoTeorico\obj\Debug\net5.0\PesoTeorico.pdb
+C:\dev\PesoTeorico\obj\Debug\net5.0\PesoTeorico.genruntimeconfig.cache
