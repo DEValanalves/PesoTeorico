@@ -7,12 +7,12 @@ public static class Menu {
     public static void Show()
     {
         Console.Clear();
-        Console.BackgroundColor = ConsoleColor.DarkBlue; // cor de fundo
+        Console.BackgroundColor = ConsoleColor.DarkGray; // cor de fundo
         Console.ForegroundColor = ConsoleColor.White; // cor da letra
 
         DrawScreen();
         WriteOptions();
-
+        Console.SetCursorPosition(19,14);
         short escolha = short.Parse(Console.ReadLine());
         HandleMenuEscolha(escolha);
 
@@ -20,51 +20,77 @@ public static class Menu {
 
     public static void DrawScreen()
         {
-            // linha horizontal  +---------------+
-            Console.Write("+");
+            // linha horizontal  +---------------+ 
+            Console.Write("╔");
             for (int i = 0; i <50; i++)
-                Console.Write("-");
+                Console.Write("═");
 
-                Console.Write("+");
+                Console.Write("╗");
                 Console.Write("\n");
             // fim linha horizontal.
 
             // LINHA VERTICAL |
-            for(int lines =0; lines <=10; lines++)
+            for(int lines =0; lines <=15; lines++)
             {
-                Console.Write("|");
+                Console.Write("║");
                 for (int i=1; i<=50;i++)
                     Console.Write(" ");
 
-                Console.Write("|");
+                Console.Write("║");
                 Console.Write("\n");
             } // FIM LINHA VERTICAL
 
-            Console.Write("+");
+            Console.Write("╚");
             for (int i = 0; i <50; i++)
-                Console.Write("-");
+            
+            Console.Write("═");
 
-            Console.Write("+");
-            Console.Write("\n");  
+            Console.Write("╝");
+        
+            // fim linha horizontal
+
+            Console.SetCursorPosition(15,1);
+            Console.Write("╔");
+            for (int i = 0; i<16; i++)
+            
+            Console.Write("═");
+            Console.Write("╗");
+
+             for(int lines =0; lines <=1; lines++)
+            {
+                Console.SetCursorPosition(15,2);
+                Console.Write("║");
+                for (int i=1; i<=16;i++)
+                    Console.Write(" ");
+
+                Console.Write("║");
+                Console.Write("\n");
+            }
+            Console.SetCursorPosition(15,3); 
+            Console.Write("╚");
+            for (int i = 0; i <16; i++)
+
+            Console.Write("═");
+            Console.Write("╝");
+            Console.SetCursorPosition(18,2);
+            Console.WriteLine("PESO TEORICO");  
         }
 
 
     public static void WriteOptions()
     {
         Console.SetCursorPosition(18,2);
-        Console.WriteLine("PESO TEORICO");
-        Console.SetCursorPosition(16,3);
-        Console.WriteLine("=================");
-        Console.SetCursorPosition(3,4);
+        Console.WriteLine("PESO TEORICO");  
+        Console.SetCursorPosition(3,5);
         Console.WriteLine("Selecione uma opção abaixo para saber o peso:");
-        Console.SetCursorPosition(18,6);
-        Console.WriteLine("1 - BARRA REDONDA");
         Console.SetCursorPosition(18,7);
-        Console.WriteLine("2 - BARRA QUADRADA");
-        Console.SetCursorPosition(18,8);
-        Console.WriteLine("3 - TUBO");
-        Console.SetCursorPosition(18,10);
-        Console.WriteLine("0 - SAIR");
+        Console.WriteLine("1 → BARRA REDONDA");
+        Console.SetCursorPosition(18,9);
+        Console.WriteLine("2 → BARRA QUADRADA");
+        Console.SetCursorPosition(18,11);
+        Console.WriteLine("3 → TUBO");
+        Console.SetCursorPosition(18,13);
+        Console.WriteLine("0 → SAIR");
     }
 
     public static void HandleMenuEscolha(short escolha)
