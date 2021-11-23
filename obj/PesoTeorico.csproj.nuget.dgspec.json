@@ -10,19 +10,18 @@
         "projectUniqueName": "C:\\dev\\PesoTeorico\\PesoTeorico.csproj",
         "projectName": "PesoTeorico",
         "projectPath": "C:\\dev\\PesoTeorico\\PesoTeorico.csproj",
-        "packagesPath": "C:\\Users\\alan.alves\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\alang\\.nuget\\packages\\",
         "outputPath": "C:\\dev\\PesoTeorico\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alan.alves\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

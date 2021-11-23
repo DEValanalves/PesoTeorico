@@ -7,23 +7,35 @@ namespace PesoTeorico
     public static void BarraRedonda()
     {
             Console.Clear();
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.Clear();
+            Menu.DrawScreen();
+            Console.SetCursorPosition(18,2);
             Console.WriteLine("BARRA REDONDA");
-            Console.WriteLine("---------------");
+            Console.Write("\n");
+            Console.SetCursorPosition(3,5);
             Console.WriteLine("Digite o Diametro da barra: ");
+            Console.SetCursorPosition(3,6);
             double diametro = double.Parse(Console.ReadLine());
-            Console.WriteLine("Digite a quantidade em Comprimento: (ex:6, 12,100...)");
+            Console.SetCursorPosition(3,8);
+            Console.WriteLine("Digite a quantidade em Comprimento: ");
+            Console.SetCursorPosition(3,9);
             double comprimento = double.Parse(Console.ReadLine());
             Console.WriteLine("");
 
-            const double CFORMULA = 0.0062;
-            // formula do peso teorico da barra redonda
+            const double CFORMULA = 0.0062;  // formula do peso teorico da barra redonda
             double peso = (diametro*diametro)*CFORMULA*comprimento;
-            var  pesoBarra = Math.Round(peso,0);                
-            Console.WriteLine("O Peso teorico é de: {0} kg", pesoBarra);
-            Console.WriteLine("");
+            var  pesoBarra = Math.Round(peso,0);
+
+            if (pesoBarra >= 1000)
+            {
+              var tonelada = pesoBarra / 1000;
+              Console.SetCursorPosition(3,11);                
+              Console.WriteLine("O Peso teorico é de: {0} t", tonelada); 
+            }
+              else {
+                 Console.SetCursorPosition(3,11);    
+                 Console.WriteLine("O Peso teorico é de: {0} kg", pesoBarra);
+                   }
+            Console.SetCursorPosition(3,15);
             Console.WriteLine("Pressione qualquer tecla para voltar ao menu");
             Console.ReadKey();
             Menu.Show();       
@@ -32,48 +44,75 @@ namespace PesoTeorico
     {
          // Barra Quadrada
             Console.Clear();
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.Clear();
+            Menu.DrawScreen();
+            Console.SetCursorPosition(18,2);
             Console.WriteLine("BARRA QUADRADA");
-            Console.WriteLine("---------------");
+            Console.Write("\n");
+            Console.SetCursorPosition(3,5);
             Console.WriteLine("Digite o Diametro da barra Quadrada: ");
+            Console.SetCursorPosition(3,6);
             double diametro = double.Parse(Console.ReadLine());
-            Console.WriteLine("Digite a quantidade em Comprimento para Saber o Peso: (ex:6, 12,100...)");
+            Console.SetCursorPosition(3,8);
+            Console.WriteLine("Digite a quantidade em Comprimento: ");
+            Console.SetCursorPosition(3,9);
             double comprimento = double.Parse(Console.ReadLine());
-            // formula do peso teorico da barra quadrada
-            const double  CFORMULA = 0.0079;
-            double peso = (diametro*diametro)*CFORMULA*comprimento;
-            var  pesoBarra = Math.Round(peso,0);          
-            Console.WriteLine("O Peso teorico é de: {0}Kg ", pesoBarra);
             
+            const double  CFORMULA = 0.0079; // formula do peso teorico da barra quadrada
+            double peso = (diametro*diametro)*CFORMULA*comprimento;
+            var  pesoBarra = Math.Round(peso,0); 
+            
+            if (pesoBarra >= 1000)
+            {
+              var tonelada = pesoBarra / 1000;
+              Console.SetCursorPosition(3,11);                
+              Console.WriteLine("O Peso teorico é de: {0} t", tonelada); 
+            }
+              else {
+                 Console.SetCursorPosition(3,11);    
+                 Console.WriteLine("O Peso teorico é de: {0} kg", pesoBarra);
+                   }
+            Console.SetCursorPosition(3,15);
             Console.WriteLine("Pressione qualquer tecla para voltar ao menu");
             Console.ReadKey();
-            Menu.Show();   
+            Menu.Show();    
     }
     public static void Tubo()
     {
             Console.Clear();
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.Clear();
-            Console.WriteLine("BARRA QUADRADA");
-            Console.WriteLine("---------------");
+            Menu.DrawScreen();
+            Console.SetCursorPosition(18,2);
+            Console.Write("TUBO");
+            Console.Write("\n");
+            Console.SetCursorPosition(3,5);
             Console.WriteLine("Digite o Diametro do Tubo:");
+            Console.SetCursorPosition(3,6);
             double diametro = double.Parse(Console.ReadLine());
+            Console.SetCursorPosition(3,7);
             Console.WriteLine("Digite a Espessura do Tubo");
+            Console.SetCursorPosition(3,8);
             double espessura = double.Parse(Console.ReadLine());
-            Console.WriteLine("Digite a quantidade em Comprimento para saber o peso: (ex:6, 12 , 100...)");
+            Console.SetCursorPosition(3,9);
+            Console.WriteLine("Digite a quantidade em Comprimento: ");
+            Console.SetCursorPosition(3,10);
             double comprimento = double.Parse(Console.ReadLine());
-            // Formula do peso Teorico de Tubo
-            const double CFORMULA = 0.02466;
+            
+            const double CFORMULA = 0.02466; // Formula do peso Teorico de Tubo
             double peso = (diametro-espessura)*espessura*CFORMULA*comprimento;
             var pesoTubo = Math.Round(peso,0);
-            Console.WriteLine("O peso teorico é de: {0}Kg",pesoTubo);
-            
+            if (pesoTubo >= 1000)
+            {
+              var tonelada = pesoTubo/ 1000;
+              Console.SetCursorPosition(3,11);                
+              Console.WriteLine("O Peso teorico é de: {0} t", tonelada); 
+            }
+              else {
+                 Console.SetCursorPosition(3,11);    
+                 Console.WriteLine("O Peso teorico é de: {0} kg", pesoTubo);
+                   }
+            Console.SetCursorPosition(3,15);
             Console.WriteLine("Pressione qualquer tecla para voltar ao menu");
             Console.ReadKey();
-            Menu.Show();  
+            Menu.Show();    
         }
    }
 }
